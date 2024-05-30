@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ventilador
+Version: 1.0.0
+Summary: Descripción de tu proyecto de ventilador.
+Home-page: https://link.a.tu/repo/ventilador
+Author: Tu Nombre
+Author-email: tu@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: PyQt5>=5.15.10
+Requires-Dist: sympy>=1.9.0

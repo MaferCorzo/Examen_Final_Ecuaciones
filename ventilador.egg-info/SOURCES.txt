@@ -1,0 +1,15 @@
+setup.py
+src/__init__.py
+src/Controller/__init__.py
+src/Controller/controller.py
+src/Main/__init__.py
+src/Main/main.py
+src/Main/main_window_ui.py
+tests/__init__.py
+tests/test_equations.py
+ventilador.egg-info/PKG-INFO
+ventilador.egg-info/SOURCES.txt
+ventilador.egg-info/dependency_links.txt
+ventilador.egg-info/entry_points.txt
+ventilador.egg-info/requires.txt
+ventilador.egg-info/top_level.txt

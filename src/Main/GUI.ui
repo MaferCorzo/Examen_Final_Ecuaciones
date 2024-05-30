@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1014</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.3125 rgba(203, 81, 164, 255), stop:0.869318 rgba(237, 108, 79, 255));
+
+border-radius: 15px;
+border: 1px solid #000000;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="titulo">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>711</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 81 20pt &quot;Rockwell Extra Bold&quot;;
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:1, y2:0, stop:0.357955 rgba(160, 108, 169, 248), stop:0.869318 rgba(237, 221, 154, 255));
+border: 3px solid #000000</string>
+       </property>
+       <property name="text">
+        <string>MOVIMIENTO CIRCULAR VENTILADOR</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="img">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>140</y>
+         <width>411</width>
+         <height>361</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 0, 0,0%);
+border:5px solid #000000
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>imgVentilador.jpg</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QWidget" name="gridLayoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>110</y>
+         <width>531</width>
+         <height>371</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
+        </property>
+        <property name="horizontalSpacing">
+         <number>8</number>
+        </property>
+        <property name="verticalSpacing">
+         <number>0</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000
+</string>
+          </property>
+          <property name="text">
+           <string>Momento de inercia (I)</string>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>false</bool>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+          <property name="indent">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="velocidad_angular">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Velocidad de rotación (rad/s)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="angulo_inicial">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Posición inical (rad) </string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="coeficiente_c">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Ingrese el comportamiento de W₀</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="coeficiente_k">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Ingrese el comportamiento de V₀</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="radio">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string>Radio (m)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000</string>
+          </property>
+          <property name="text">
+           <string>Ángulo inicial (θ₀)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000</string>
+          </property>
+          <property name="text">
+           <string>Velocidad Angular Inicial (ω₀)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000</string>
+          </property>
+          <property name="text">
+           <string>Tipo de Torque</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000</string>
+          </property>
+          <property name="text">
+           <string>Coeficiente (K)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000</string>
+          </property>
+          <property name="text">
+           <string>Coeficiente (c)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">font: 63 12pt &quot;Sitka Text Semibold&quot;;
+background-color: rgb(255, 205, 247);
+border-radius: 0px;
+border: 2px solid #000000</string>
+          </property>
+          <property name="text">
+           <string>Radio (r)</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="inercia">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;
+</string>
+          </property>
+          <property name="cursorPosition">
+           <number>0</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="dragEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Resistencia (kg·m²) </string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QComboBox" name="tipo_torque">
+          <property name="styleSheet">
+           <string notr="true">border-radius: 0px;
+border: 2px solid #000000;
+background-color: rgb(255, 255, 255);
+font: 12pt &quot;Segoe UI Variable&quot;;
+padding: 10px;</string>
+          </property>
+          <property name="currentText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="ecuacion_diferencial">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>490</y>
+         <width>241</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 3px solid #000000;
+background-color: qlineargradient(spread:pad, x1:0.618909, y1:0.119,                              x2:0.597, y2:0.909091, stop:0.357955 rgba(101, 168, 182, 201), stop:0.607955 rgba(118, 129, 207, 212));
+font: 63 13pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover{
+background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:0, y2:1, stop:0.357955 rgba(227, 79, 79, 155), stop:0.613636 rgba(246, 189, 69, 189));
+border: 3px solid #000000;
+}</string>
+       </property>
+       <property name="text">
+        <string>Definir Ecuación Diferencial</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="graficar">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>490</y>
+         <width>241</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+border: 3px solid #000000;
+background-color: qlineargradient(spread:pad, x1:0.618909, y1:0.119,                              x2:0.597, y2:0.909091, stop:0.357955 rgba(101, 168, 182, 201), stop:0.607955 rgba(118, 129, 207, 212));
+font: 63 13pt &quot;Segoe UI Variable Text Semibold&quot;;
+}
+
+QPushButton:hover{
+background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:0, y2:1, stop:0.357955 rgba(227, 79, 79, 155), stop:0.613636 rgba(246, 189, 69, 189));
+border: 3px solid #000000;
+}</string>
+       </property>
+       <property name="text">
+        <string>Graficar</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
